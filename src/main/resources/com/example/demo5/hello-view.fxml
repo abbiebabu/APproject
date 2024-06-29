@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo5.registerController">
+   <children>
+      <AnchorPane prefHeight="554.0" prefWidth="985.0" style="-fx-background-color: F2EEEE;">
+         <children>
+            <AnchorPane layoutX="-3.0" prefHeight="558.0" prefWidth="987.0" style="-fx-background-color: F2EEEE;">
+               <children>
+                  <ImageView fitHeight="558.0" fitWidth="436.0" layoutX="-9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/Rectangle.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="588.0" fitWidth="824.0" layoutX="14.0" layoutY="-30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/m011t0438_g_interrogation_box_07sep22.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="534.0" layoutY="137.0" prefHeight="25.0" prefWidth="63.0" text="Full Name">
+                     <font>
+                        <Font size="12.32" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tf_fullname" layoutX="532.0" layoutY="169.0" prefHeight="25.0" prefWidth="399.0" style="-fx-background-color: E9E7E7;" />
+                  <Button fx:id="btn_signup" layoutX="641.0" layoutY="428.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="138.0" style="-fx-background-color: C64A50; -fx-font-family: Inter;" text="Sign Up" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <RadioButton fx:id="rb_thai" layoutX="752.0" layoutY="360.0" mnemonicParsing="false" selected="true" text="Thai">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="nation1" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rb_malay" layoutX="816.0" layoutY="360.0" mnemonicParsing="false" text="Malay">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="nation2" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rb_singa" layoutX="878.0" layoutY="360.0" mnemonicParsing="false" text="Singa">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="nation3" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <Button id="btn_login" fx:id="btn_login" layoutX="871.0" layoutY="42.0" lineSpacing="1.15" mnemonicParsing="false" prefHeight="0.0" prefWidth="63.0" style="-fx-background-color: C64A50;" text="login" textFill="WHITE" />
+
+                  <Label layoutX="534.0" layoutY="200.0" prefHeight="25.0" prefWidth="63.0" text="Username">
+                     <font>
+                        <Font size="12.32" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tf_username" layoutX="532.0" layoutY="232.0" prefHeight="25.0" prefWidth="168.0" style="-fx-background-color: E9E7E7;" />
+                  <Label layoutX="536.0" layoutY="264.0" prefHeight="25.0" prefWidth="59.0" text="Password">
+                     <font>
+                        <Font size="12.32" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="rb_male" layoutX="755.0" layoutY="233.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="53.0" text="Male">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="male" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rb_female" layoutX="817.0" layoutY="233.0" mnemonicParsing="false" text="Female">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="female" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <Label layoutX="760.0" layoutY="200.0" prefHeight="25.0" prefWidth="44.0" text="Gender">
+                     <font>
+                        <Font size="12.32" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="tf_password" layoutX="535.0" layoutY="293.0" prefHeight="25.0" prefWidth="399.0" style="-fx-background-color: E9E7E7;" />
+                  <Label layoutX="536.0" layoutY="327.0" prefHeight="25.0" prefWidth="79.0" text="Date of birth">
+                     <font>
+                        <Font size="12.32" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="dp_dob" layoutX="535.0" layoutY="352.0" style="-fx-background-color: E9E7E79E7E7;" />
+                  <Label layoutX="754.0" layoutY="326.0" prefHeight="25.0" prefWidth="79.0" text="Nationality">
+                     <font>
+                        <Font size="12.32" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="45.0" fitWidth="44.0" layoutX="454.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/Take_Quiz.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="640.0" layoutY="77.0" prefHeight="45.0" prefWidth="119.0" text="Register" textFill="#c64a50">
+                     <font>
+                        <Font name="Berlin Sans FB" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
